@@ -1,18 +1,12 @@
-package DefaultConstructor;
+package ParameterizedConstructor;
 
 public class Main {
     public static void main(String[] args) {
-        Movie movie = new Movie(); // Implicit default constructor is called
-        movie.displayDetails(); // Displays default values
+        Movie movie = new Movie("Inception", 148); // Parameterized constructor is called
+        movie.displayDetails();
     }
 }
-
 /*
-
-Output 1 :
-Title: null, Duration: 0 mins
-
-Output 2 :
-Title: Untitled, Duration: 90 mins
-
+Output :
+Title: Inception, Duration: 148 mins
 */
