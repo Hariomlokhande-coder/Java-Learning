@@ -1,5 +1,4 @@
 package ParameterizedConstructor;
-
 public class Movie {
     private String title;
     private int duration;
