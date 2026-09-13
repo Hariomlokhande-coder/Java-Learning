@@ -1,16 +1,19 @@
-package DefaultConstructor;
+public class Main {
 
-public class Movie {
-    private String title; // Default: null
-    private int duration; // Default: 0
+    public static void main(String[] args) {
 
-    // Custom default constructor
-    public Movie() {
-        this.title = "Untitled";
-        this.duration = 90;
-    }
+        // Original object
+        Order order1 = new Order("Laptop", 50000);
 
-    public void displayDetails() {
-        System.out.println("Title: " + title + ", Duration: " + duration + " mins");
+        // copy constructor
+        Order order2 = new Order(order1);
+
+        System.out.println("Original Order:");
+        order1.display();
+
+        System.out.println("\nCopied Order:");
+        order2.display();
+
+        System.out.println("\nAre they same object? " + (order1 == order2));
     }
 }
