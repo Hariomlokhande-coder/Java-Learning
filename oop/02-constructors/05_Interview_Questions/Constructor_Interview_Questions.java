@@ -72,7 +72,7 @@ This ensures that the parent part of the object is initialized before the child 
 
 **Answer:** A constructor **cannot be declared `synchronized` in Java**.
 
-For example:
+For example:-
 
 ```java
 class Example {
